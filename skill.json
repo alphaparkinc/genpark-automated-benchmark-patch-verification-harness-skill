@@ -1,0 +1,41 @@
+{
+  "name": "genpark-automated-benchmark-patch-verification-harness-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automated benchmark patch verification harness executing fail-to-pass test matrices for autonomous software engineering.",
+  "author": "genpark",
+  "category": "software-engineering",
+  "tags": [
+    "swe-bench",
+    "patch-verifier",
+    "regression-testing",
+    "git-patch-eval",
+    "coding-agent-benchmark"
+  ],
+  "inputs": {
+    "repository_target": {
+      "type": "string"
+    },
+    "problem_issue_id": {
+      "type": "string"
+    },
+    "git_unified_diff": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "benchmark_run_id": {
+      "type": "string"
+    },
+    "fail_to_pass_tests_resolved_count": {
+      "type": "integer"
+    },
+    "pass_to_pass_regressions_count": {
+      "type": "integer"
+    },
+    "swe_benchmark_resolved_verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
